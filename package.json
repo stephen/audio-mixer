@@ -1,0 +1,24 @@
+{
+  "name": "audio-mixer",
+  "version": "0.0.1",
+  "description": "Mixing multiple PCM streams into one.",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alfreddatakillen/audio-mixer.git"
+  },
+  "keywords": [
+    "audio",
+    "mixer",
+    "pcm",
+    "sound"
+  ],
+  "author": "Alfred Godoy",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/alfreddatakillen/audio-mixer/issues"
+  },
+  "homepage": "https://github.com/alfreddatakillen/audio-mixer"
+}
