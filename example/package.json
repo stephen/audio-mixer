@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "lame": "*",
+    "speaker": "*"
+  }
+}
