@@ -27,15 +27,35 @@ mixer.pipe(speaker);
  * Decode mp3 and add the stream as mixer input:
  */
 
-var file = fs.createReadStream('example0.mp3');
+var file0 = fs.createReadStream('example0.mp3');
 
-var decoder = new lame.Decoder();
-var mp3stream = file.pipe(decoder);
+var decoder0 = new lame.Decoder();
+var mp3stream0 = file0.pipe(decoder0);
 
-decoder.on('format', function (format) {
+decoder0.on('format', function (format) {
 	console.log(format);
 
-	mp3stream.pipe(mixer.input({
+	mp3stream0.pipe(mixer.input({
+		sampleRate: format.sampleRate,
+		channels: format.channels,
+		bitDepth: format.bitDepth
+	}));
+
+});
+
+/*
+ * Decode mp3 and add the stream as mixer input:
+ */
+
+var file1 = fs.createReadStream('example1.mp3');
+
+var decoder1 = new lame.Decoder();
+var mp3stream1 = file1.pipe(decoder1);
+
+decoder1.on('format', function (format) {
+	console.log(format);
+
+	mp3stream1.pipe(mixer.input({
 		sampleRate: format.sampleRate,
 		channels: format.channels,
 		bitDepth: format.bitDepth
