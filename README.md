@@ -16,5 +16,5 @@ TODO
 Credits
 -------
 
-The accordionist in example0.mp3 is my grandpa Halvard. (Hej, farfar!)
+The accordionist in example0.mp3 and example1.mp3 is my grandpa Halvard. (Hej, farfar!)
 
