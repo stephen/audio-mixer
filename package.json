@@ -3,11 +3,13 @@
   "version": "0.0.1",
   "description": "Mixing multiple PCM streams into one.",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git://github.com/alfreddatakillen/audio-mixer.git"
+    "url": "git://github.com/stephen/audio-mixer.git"
+  },
+  "scripts": {
+    "test": "node ./example/example.js"
   },
   "keywords": [
     "audio",
@@ -16,9 +18,18 @@
     "sound"
   ],
   "author": "Alfred Godoy",
+  "contributors": [
+    {
+      "name": "Stephen Wan",
+      "email": "stephen@stephenwan.net"
+    }
+  ],
   "license": "GPLv3",
   "bugs": {
-    "url": "https://github.com/alfreddatakillen/audio-mixer/issues"
+    "url": "https://github.com/stephen/audio-mixer/issues"
   },
-  "homepage": "https://github.com/alfreddatakillen/audio-mixer"
+  "devDependencies": {
+    "speaker": "0.0.10",
+    "lame": "~1.0.3"
+  }
 }

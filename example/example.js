@@ -27,7 +27,7 @@ mixer.pipe(speaker);
  * Decode mp3 and add the stream as mixer input:
  */
 
-var file0 = fs.createReadStream('example0.mp3');
+var file0 = fs.createReadStream(__dirname + '/example0.mp3');
 
 var decoder0 = new lame.Decoder();
 var mp3stream0 = file0.pipe(decoder0);
@@ -47,7 +47,7 @@ decoder0.on('format', function (format) {
  * Decode mp3 and add the stream as mixer input:
  */
 
-var file1 = fs.createReadStream('example1.mp3');
+var file1 = fs.createReadStream(__dirname + '/example1.mp3');
 
 var decoder1 = new lame.Decoder();
 var mp3stream1 = file1.pipe(decoder1);
