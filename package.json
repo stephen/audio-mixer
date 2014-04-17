@@ -3,13 +3,12 @@
   "version": "0.0.1",
   "description": "Mixing multiple PCM streams into one.",
   "main": "index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/stephen/audio-mixer.git"
-  },
   "scripts": {
     "test": "node ./example/example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alfreddatakillen/audio-mixer.git"
   },
   "keywords": [
     "audio",
@@ -26,10 +25,11 @@
   ],
   "license": "GPLv3",
   "bugs": {
-    "url": "https://github.com/stephen/audio-mixer/issues"
+    "url": "https://github.com/alfreddatakillen/audio-mixer/issues"
   },
   "devDependencies": {
     "speaker": "0.0.10",
-    "lame": "~1.0.3"
+    "lame": "~1.0.3",
+    "keypress": "~0.2.1"
   }
 }
